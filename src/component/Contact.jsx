@@ -1,6 +1,7 @@
-import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import jyoti from "../assets/jyoti-image.jpg";
 import { Link } from "react-router-dom";
@@ -24,8 +25,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Clint Briley</h2>
-                <p>Front-End Developer</p>
+                <h2 className="py-2">Jyoti</h2>
+                <p>Full Stack Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
@@ -34,34 +35,29 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <a
-                    href="https://www.linkedin.com/in/clint-briley-50056920a/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <Link to={`https://www.linkedin.com/in/jyoti29/`}>
                       <FaLinkedinIn />
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/fireclint"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
-                    </div>
-                  </a>
+                    </Link>
+                  </div>
 
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
+                    <Link to={`https://github.com/Jyotipal29`}>
+                      <FaGithub />
+                    </Link>
                   </div>
-                  <Link href="/resume">
-                    <a>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <BsFillPersonLinesFill />
-                      </div>
-                    </a>
+
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <Link to={`https://www.instagram.com/jyoticodes/`}>
+                      <BsInstagram />
+                    </Link>
+                  </div>
+                  <Link
+                    to={`https://drive.google.com/file/d/13c0lNmBi4GaRc22k5yN9lRLboo_t84by/view?usp=sharing`}
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <BsFillPersonLinesFill />
+                    </div>
                   </Link>
                 </div>
               </div>

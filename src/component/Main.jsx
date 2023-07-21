@@ -13,14 +13,14 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hi, Im <span className="text-[#5651e5]">Jyoti</span>
           </h1>
-          <h1 className="py-2 text-gray-600">A Front-End Developer</h1>
+          <h1 className="py-2 text-gray-600">A Full Stack Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-            aliquam, placeat harum, alias perspiciatis possimus debitis eveniet
-            ipsa ea quam voluptas pariatur adipisci modi rerum expedita, ab
-            numquam at minima. Omnis deserunt quasi aliquam explicabo minima
-            nostrum dolorem soluta placeat praesentium? Maiores voluptas eveniet
-            aliquam ut amet quos harum inventore!
+            I am Jyoti, a skilled Full-Stack Web Developer. My expertise spans
+            React, TypeScript, Next.js, JavaScript,Tailwind CSS, HTML, and CSS,
+            enabling me to create captivating web applications that elevate
+            businesses.In the world of back-end development, I harness the power
+            of MongoDB, Node.js, and Express.js, crafting robust and scalable
+            MERN stack solutions
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">

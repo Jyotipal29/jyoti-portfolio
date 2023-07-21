@@ -41,6 +41,13 @@ const Navbar = () => {
                 Contact
               </li>
             </Link>
+            <Link
+              to={`https://drive.google.com/file/d/13c0lNmBi4GaRc22k5yN9lRLboo_t84by/view?usp=sharing`}
+            >
+              <li className="ml-10 text-sm uppercase hover:border-b text-[#5651e5]">
+                Resume
+              </li>
+            </Link>
           </ul>
           <div className="md:hidden cursor-pointer" onClick={handleNav}>
             <AiOutlineMenu size={25} />
@@ -95,6 +102,16 @@ const Navbar = () => {
               <Link to="/contact">
                 <li className="py-4 text-sm" onClick={() => setNav(false)}>
                   Contact
+                </li>
+              </Link>
+              <Link
+                to={`https://drive.google.com/file/d/13c0lNmBi4GaRc22k5yN9lRLboo_t84by/view?usp=sharing`}
+              >
+                <li
+                  className="py-4 text-sm text-[#5651e5]"
+                  onClick={() => setNav(false)}
+                >
+                  Resume
                 </li>
               </Link>
             </ul>
