@@ -15,17 +15,19 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="fixed top-0 left-0 w-full h-20 shadow-xl z-[100] bg-white">
-      <div className="flex justify-between items-center w-full px-2 2xl:px-16">
-        <div className="w-20 h-20">jyoti</div>
+    <div className="fixed top-0 left-0 w-full  shadow-xl z-[100] bg-white">
+      <div className="flex justify-between h-20  items-center w-full px-2 2xl:px-16">
+        <div className=" uppercase text-3xl font-bold  top-8 text-[#5651e5] font-charm ">
+          jyoticodes
+        </div>
         <div>
           <ul className="hidden md:flex">
             <Link to="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link to="/about">
+            {/* <Link to="/about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
+            </Link> */}
             <Link to="/skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
@@ -75,11 +77,26 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <li className="py-4 text-sm">Home</li>
-              <li className="py-4 text-sm">About</li>
-              <li className="py-4 text-sm">Skills</li>
-              <li className="py-4 text-sm">Projects</li>
-              <li className="py-4 text-sm">Contact</li>
+              <Link to="/">
+                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                  Home
+                </li>
+              </Link>
+              <Link to="/skills">
+                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                  Skills
+                </li>
+              </Link>
+              <Link to="/projects">
+                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                  Projects
+                </li>
+              </Link>
+              <Link to="/contact">
+                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                  Contact
+                </li>
+              </Link>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e9]">
@@ -87,16 +104,24 @@ const Navbar = () => {
               </p>
               <div className="flex justify-between items-center py-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link to={`https://www.linkedin.com/in/jyoti29/`}>
+                    <FaLinkedinIn />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsInstagram />
+                  <Link to={`https://www.instagram.com/jyoticodes/`}>
+                    <BsInstagram />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiFillGithub />
+                  <Link to={`https://github.com/Jyotipal29`}>
+                    <AiFillGithub />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineTwitter />
+                  <Link to={`https://twitter.com/jyotipal0129`}>
+                    <AiOutlineTwitter />
+                  </Link>
                 </div>
               </div>
             </div>
