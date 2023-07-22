@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full  shadow-xl z-[100] bg-white">
       <div className="flex justify-between h-20  items-center w-full px-2 2xl:px-16">
         <div className=" uppercase text-3xl font-bold  top-8 text-[#5651e5] font-charm ">
-          jyoticodes
+          <Link to="/">jyoticodes</Link>
         </div>
         <div>
           <ul className="hidden md:flex">
@@ -68,7 +68,9 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <p className="">jyoti</p>
+              <div className=" uppercase text-3xl font-bold  top-8 text-[#5651e5] font-charm ">
+                jyoticodes
+              </div>
               <div
                 className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3"
                 onClick={handleNav}
@@ -76,11 +78,11 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
+            {/* <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
                 lets build something legendary together
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">

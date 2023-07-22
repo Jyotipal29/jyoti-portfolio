@@ -1,8 +1,8 @@
 import ProjectItems from "./ProjectItems";
-import jyotube from "../assets/video-lib.png";
-import jyogram from "../assets/jyogram.png";
-import jyocart from "../assets/ecomm-ss.png";
-import jyonotes from "../assets/notes-ss.png";
+import beau from "../assets/beau.png";
+import jyotube from "../assets/jyotube.png";
+import jyogram from "../assets/social.png";
+import jyocart from "../assets/jyocart.png";
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
@@ -13,12 +13,10 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItems
-            title="Jyocart"
-            backgroundImg={jyocart}
-            projectUrl="/jyocart"
-            tech={[
-              "Reactjs, typescript,tailwindcss, nodejs, expressjs,mongodb",
-            ]}
+            title="Beau"
+            backgroundImg={beau}
+            projectUrl="/beau"
+            tech={["Reactjs,Nextjs,tailwindcss, nodejs, expressjs,mongodb"]}
           />
           <ProjectItems
             title="Jyotube"
@@ -29,16 +27,19 @@ const Projects = () => {
             ]}
           />
           <ProjectItems
+            title="Jyocart"
+            backgroundImg={jyocart}
+            projectUrl="/jyocart"
+            tech={[
+              "Reactjs, typescript,tailwindcss, nodejs, expressjs,mongodb",
+            ]}
+          />
+
+          <ProjectItems
             title="Jyogram"
             backgroundImg={jyogram}
             projectUrl="/jyogram"
             tech={["Reactjs,css, nodejs, expressjs,mongodb"]}
-          />
-          <ProjectItems
-            title="jyonotes"
-            backgroundImg={jyonotes}
-            projectUrl="/jyonotes"
-            tech={["Reactjs,Nextjs,tailwindcss, nodejs, expressjs,mongodb"]}
           />
         </div>
       </div>
