@@ -13,14 +13,14 @@ const JyoTube = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">jyotube App</h2>
+          <h2 className="py-2">jyocart App</h2>
           <h3>React JS / Tailwind / TypeScript / Node / express / mongodb</h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <h3>Key Features</h3>
+          <h3 className="text-2xl">Key Features</h3>
           <p>
             <strong>User Authentication & Authorization:</strong>
             Implemented robust user authentication with role-based authorization

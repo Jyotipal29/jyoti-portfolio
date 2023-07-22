@@ -2,7 +2,6 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { useForm, ValidationError } from "@formspree/react";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import jyoti from "../assets/jyoti-image.jpg";
 import { Link } from "react-router-dom";
 const Contact = () => {
